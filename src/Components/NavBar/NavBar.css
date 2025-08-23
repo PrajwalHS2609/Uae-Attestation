@@ -91,18 +91,80 @@
   opacity: 1;
   background-color: white;
 }
+.mainMenu {
+  display: none;
+}
+/* Sidebar Menu (hidden by default) */
+.respMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background: rgba(0, 0, 0, 0.95);
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px; /* space for navbar */
+  z-index: 99999;
+}
+
+.respMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.respMenu ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.respMenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Show sidebar when active */
+.respMenu.show {
+  transform: translateX(0);
+}
+
+/* Close button */
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .menu-container > ul:nth-child(1) {
     display: none;
   }
   .mainMenu {
     /* border: solid red; */
+    display: block;
+    cursor: pointer;
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: c;
   }
   .hamIcon {
+
     color: white;
     font-size: 30px;
-    position: absolute;
-    right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container > ul:nth-child(1) {
+    display: none;
   }
 }
