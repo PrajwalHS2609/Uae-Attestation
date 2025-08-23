@@ -1,0 +1,114 @@
+/* Section Background */
+.about-section {
+  width: 100%;
+  padding: 8rem 2rem;
+  background: #3f3f3f; /* solid black variant background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Wrapper */
+.about-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+/* Left Text */
+.about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.about-text h6 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #888; /* subtle gray */
+  text-transform: uppercase;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff; /* pure white */
+  line-height: 1.3;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #bbb; /* softer gray */
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* Button - no gradient */
+.about-btn {
+  margin-top: 1rem;
+  padding: 12px 28px;
+  background: #000; /* solid black button */
+  border: 1px solid #444; /* subtle border */
+  border-radius: 6px;
+  color: #fff; /* white text */
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #222; /* slightly lighter black */
+  border-color: #666;
+  transform: translateY(-2px);
+}
+
+/* Right Image */
+.about-image {
+  flex: 1;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.about-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* light black overlay */
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+  .about-text h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff; /* pure white */
+  line-height: 1.3;
+}
+}

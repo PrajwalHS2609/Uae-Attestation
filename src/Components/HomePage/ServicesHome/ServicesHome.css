@@ -1,0 +1,184 @@
+.services-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.services-content:nth-child(1) {
+  flex-direction: column;
+}
+.services-content:nth-child(1) > p {
+  width: 80%;
+  color: var(--textColor1);
+  text-align: center;
+}
+.services-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.services-content > h2 {
+  color: var(--textColor2);
+  font-size: 40px;
+  text-align: center;
+}
+
+.services-cardContainer {
+  /* border: solid white; */
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  margin: 3rem;
+  /* transform: rotate(-2.8); */
+  /* background-color: var(--customColor1); */
+}
+.services-cardContainer::after {
+  content: "";
+  background: var(--card-gradient); /* <-- gradient comes from inline style */
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: -1;
+  transform: skew(5deg, 5deg);
+}
+.services-cardContainer::before {
+  content: "";
+  background: var(--card-gradient); /* <-- gradient comes from inline style */
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  z-index: -1;
+  transform: skew(5deg, 5deg);
+}
+.services-cardContent {
+  /* border: solid red; */
+  width: 330px;
+  height: 380px;
+  /* transform: rotate(1.7deg); */
+  background-color: #292e2c;
+  position: relative;
+}
+.services-cardWrapper1 {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-cardItem {
+  /* border: solid yellow; */
+  width: 50%;
+  height: 100%;
+}
+.services-cardItem:nth-child(2) {
+  /* border: solid yellow; */
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.services-cardItem:nth-child(2) > h2 {
+  font-size: 8rem;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+.services-cardItem:nth-child(1) {
+  background-color: #2f322f;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.services-cardWrapper2 {
+  /* border: solid blue; */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.services-cardWrapper2 > h3 {
+  color: white;
+  font-size: 26px;
+}
+.services-cardWrapper2 > p {
+  color: white;
+  text-align: justify;
+}
+.serviceIcons {
+  font-size: 50px;
+  margin-top: 40px;
+  color: white;
+}
+.services-cardWrapper2 > button {
+  padding: 5px 10px;
+  border: solid white 1px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.services-cardWrapper2 > button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.services-cardWrapper2 > button:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .services-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+  .services-content > h2 {
+    font-size: 30px;
+  }
+  .services-content:nth-child(1) > p {
+  width: 100%;
+  color: var(--textColor1);
+  text-align: justify;
+}
+.services-cardContainer {
+  /* border: solid white; */
+  width: 300px;
+  height: 400px;
+  margin: 0rem; 
+  margin-top: 3rem;
+}
+}

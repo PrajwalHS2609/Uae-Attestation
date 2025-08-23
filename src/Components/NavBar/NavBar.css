@@ -1,0 +1,108 @@
+.navbar-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.481);
+  backdrop-filter: blur(10px);
+}
+.navbar-container1 {
+  /* border: solid green; */
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  padding: 10px;
+}
+.navLogo-container {
+  /* border: solid red; */
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navLogo-container > img {
+  object-fit: contain;
+  width: 150px;
+}
+.menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-container > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-container > ul > li {
+  font-size: 18px;
+  font-weight: 500;
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-container > ul > li > a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+}
+
+/* underline (hidden by default) */
+.menu-container > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+/* animate underline on hover */
+.menu-container > ul > li > a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* active link underline (always visible) */
+.menu-container > ul > li > a.active::after {
+  width: 100%;
+  opacity: 1;
+  background-color: white;
+}
+@media screen and (max-width: 768px) {
+  .menu-container > ul:nth-child(1) {
+    display: none;
+  }
+  .mainMenu {
+    /* border: solid red; */
+    position: relative;
+  }
+  .hamIcon {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+  }
+}

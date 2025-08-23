@@ -1,0 +1,247 @@
+.testimonial-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+/* Left image */
+.testimonial-content1 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 30px;
+  top: 30px;
+  z-index: -1;
+}
+.testimonial-content1 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateY(-180deg);
+}
+
+/* Center carousel */
+.testimonial-content2 {
+  width: 42%;
+  padding: 20px;
+  background-color: white;
+  margin-right: 200px;
+}
+.testimonial-content2 > h2 {
+  color: var(--textColor2);
+  text-align: center;
+}
+
+/* Right image */
+.testimonial-content3 {
+  position: absolute;
+  width: 500px;
+  height: 700px;
+  right: 30px;
+  bottom: 0px;
+  z-index: -1;
+}
+.testimonial-content3 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-content2 > p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.testimonial-card {
+  background: linear-gradient(145deg, #ffffff, #f9f9f9);
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft gradient border glow */
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 18px;
+  z-index: -1;
+  filter: blur(12px);
+  opacity: 0.4;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid var(--textColor2);
+  box-shadow: 0 0 10px rgba(255, 110, 196, 0.5);
+}
+
+.testimonial-card h4 {
+  margin: 10px 0 5px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.testimonial-card span {
+  font-size: 14px;
+  color: #777;
+  display: block;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  position: relative;
+  padding: 0 10px;
+}
+.testimonial-card p::before,
+.testimonial-card p::after {
+  content: '"';
+  font-size: 28px;
+  color: var(--customColor1);
+  opacity: 0.5;
+}
+.testimonial-card p::before {
+  margin-right: 5px;
+}
+.testimonial-card p::after {
+  margin-left: 5px;
+}
+
+/* Carousel arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+  width: 35px;
+  height: 35px;
+}
+
+/* Carousel indicators */
+.carousel-indicators [data-bs-target] {
+  background-color: #ff6ec4;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.carousel-indicators .active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* ========================= */
+/* 📱 Responsive Breakpoints */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .testimonial-container {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .testimonial-content1,
+  .testimonial-content3 {
+    display: none; /* Hide background images */
+  }
+
+  .testimonial-content2 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .testimonial-card {
+    padding: 30px 20px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  .testimonial-content2 {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .testimonial-card {
+    padding: 20px 15px;
+    border-radius: 12px;
+  }
+
+  .testimonial-avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .testimonial-card h4 {
+    font-size: 16px;
+  }
+
+  .testimonial-card span {
+    font-size: 12px;
+  }
+
+  .testimonial-card p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .testimonial-card {
+    padding: 15px 10px;
+  }
+
+  .testimonial-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonial-card h4 {
+    font-size: 15px;
+  }
+
+  .testimonial-card p {
+    font-size: 12px;
+  }
+}
