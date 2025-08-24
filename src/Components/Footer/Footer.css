@@ -83,6 +83,7 @@
 .footer-line > li {
   list-style: none;
   margin-top: -10px;
+  /* border: solid red; */
 }
 .footer-line > li > a {
   color: white;
@@ -101,5 +102,14 @@
   }
   .footer-content {
   width: 100%;
+}
+.footer-line {
+  /* border:  solid blue; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #3f4850;
+  position: relative;
+  gap: 20px;
 }
 }

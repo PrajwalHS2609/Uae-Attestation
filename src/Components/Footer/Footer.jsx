@@ -20,9 +20,10 @@ const Footer = () => {
         <div className="footer-content">
           <Image src={logo} alt="nav logo" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque,
-            nulla sequi qui excepturi animi culpa autem optio vero magni enim
-            nobis at tenetur, officia ipsam molestias cupiditate alias sed?
+            At Goodway Attestation, we pride ourselves on being a leading expert
+            in certificate attestation and apostille services. With 15+ years of
+            experience and a team of dedicated professionals, we've earned a
+            reputation for delivering fast, efficient, and reliable solutions.
           </p>
         </div>
         <ul>
