@@ -91,6 +91,7 @@
   opacity: 1;
   background-color: white;
 }
+
 .mainMenu {
   display: none;
 }
@@ -100,7 +101,7 @@
   top: 0;
   right: 0;
   height: 100vh;
-  width: 250px;
+  width: 300px;
   background: rgba(0, 0, 0, 0.95);
   transform: translateX(100%);
   transition: transform 0.4s ease-in-out;
@@ -141,6 +142,68 @@
   color: white;
   cursor: pointer;
 }
+/* Desktop dropdown */
+.services .serviceDropDown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 220px;
+  background: white;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+.services:hover .serviceDropDown {
+  display: flex;
+}
+.serviceDropDown a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.serviceDropDown a:hover {
+  background: #f1f1f1;
+}
+
+/* Mobile Dropdown */
+.mobileServices {
+  cursor: pointer;
+}
+.mobileServices-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.arrow {
+  transition: transform 0.3s ease;
+}
+.arrow.rotate {
+  transform: rotate(180deg);
+}
+.mobileServiceDropDown {
+  max-height: 0;
+  overflow: hidden;
+  background: rgba(255,255,255,0.05);
+  transition: max-height 0.3s ease;
+}
+.mobileServiceDropDown.open {
+  max-height: 500px; /* enough to reveal items */
+}
+.mobileServiceDropDown li {
+  padding: 12px 20px;
+}
+.mobileServiceDropDown li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.mobileServiceDropDown li a:hover {
+  color: #f39c12;
+}
 
 @media screen and (max-width: 768px) {
   .menu-container > ul:nth-child(1) {
@@ -154,7 +217,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: c;
+    align-items: c  ;
   }
   .hamIcon {
 

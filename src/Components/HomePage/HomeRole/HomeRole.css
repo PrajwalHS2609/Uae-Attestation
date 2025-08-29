@@ -15,7 +15,6 @@
 .role-header h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  font-weight: bold;
   color: var(--textColor2);
 }
 
@@ -43,6 +42,7 @@
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  margin: 25px;
 }
 
 .role-card:hover {
