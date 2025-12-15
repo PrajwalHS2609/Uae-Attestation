@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import "./HeroSection.css";
 import uaelogo from "./../../../Images/UAE Embassy.png";
@@ -10,6 +11,9 @@ import key4 from "@/Images/KeyPts/govtApp.png"
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const HeroSection = () => {
+    const handlePop = () => {
+    document.querySelector(".popup-container").style.display = "flex";
+  };
   return (
     <div className="heroSection-container">
       <img
@@ -28,7 +32,7 @@ const HeroSection = () => {
               verified efficiently and promptly.
             </p>
             <span>
-              <button>
+              <button onClick={handlePop}>
                 Talk to Expert{" "}
                 <MdKeyboardArrowRight className="heroSection-icon" />
               </button>
