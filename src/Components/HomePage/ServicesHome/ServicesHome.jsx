@@ -58,7 +58,7 @@ const ServicesHome = () => {
     "linear-gradient(45deg, #f7971e, #ffd200)",
   ];
   return (
-    <div className="services-container">
+    <div className="services-container" id="services">
       <div className="services-content">
         <h2>UAE Embassy Attestation Services in Bangalore</h2>
         <p>

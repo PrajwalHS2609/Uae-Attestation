@@ -24,33 +24,33 @@ const Menu = () => {
         {/* Desktop Dropdown */}
         <li className="services">
           <Link
-            href="/attestation-services"
-            className={pathname === "/attestation-services" ? "active" : ""}
+            href="#services"
+            className={pathname === "#services" ? "active" : ""}
           >
             Services
           </Link>
           <div className="serviceDropDown">
-            <Link href="/">Educational Certificates</Link>
-            <Link href="/">Marriage Certificates</Link>
-            <Link href="/">Birth Certificates</Link>
-            <Link href="/">HRD Attestation</Link>
-            <Link href="/">Commercial Documents</Link>
-            <Link href="/">Legal Documents</Link>
+            <Link href="#services">Educational Certificates</Link>
+            <Link href="#services">Marriage Certificates</Link>
+            <Link href="#services">Birth Certificates</Link>
+            <Link href="#services">HRD Attestation</Link>
+            <Link href="#services">Commercial Documents</Link>
+            <Link href="#services">Legal Documents</Link>
           </div>
         </li>
 
         <li>
           <Link
-            href="/about-us"
-            className={pathname === "/about-us" ? "active" : ""}
+            href="#about-us"
+            className={pathname === "#about-us" ? "active" : ""}
           >
             About Us
           </Link>
         </li>
         <li>
           <Link
-            href="/contact-us"
-            className={pathname === "/contact-us" ? "active" : ""}
+            href="#contact-us"
+            className={pathname === "#contact-us" ? "active" : ""}
           >
             Contact Us
           </Link>
@@ -82,8 +82,8 @@ const Menu = () => {
           >
             <div className="mobileServices-header">
               <Link
-                href="/attestation-services"
-                className={pathname === "/attestation-services" ? "active" : ""}
+                href="#services"
+                className={pathname === "#services" ? "active" : ""}
               >
                 Services
               </Link>
@@ -107,8 +107,8 @@ const Menu = () => {
 
           <li>
             <Link
-              href="/about-us"
-              className={pathname === "/about-us" ? "active" : ""}
+              href="#about-us"
+              className={pathname === "#about-us" ? "active" : ""}
               onClick={() => setSidebarOpen(false)}
             >
               About Us
@@ -116,8 +116,8 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              href="/contact-us"
-              className={pathname === "/contact-us" ? "active" : ""}
+              href="#contact-us"
+              className={pathname === "#contact-us" ? "active" : ""}
               onClick={() => setSidebarOpen(false)}
             >
               Contact Us
