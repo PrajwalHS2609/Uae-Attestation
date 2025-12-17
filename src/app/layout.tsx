@@ -1,9 +1,9 @@
 import "./globals.css";
 import NavBar from "./../Components/NavBar/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from './../Components/Footer/Footer';
-import PopupForm from './../Components/PopupForm/PopupForm';
-import Whatsapp from './../Components/Whatsapp/Whatsapp';
+import Footer from "./../Components/Footer/Footer";
+import PopupForm from "./../Components/PopupForm/PopupForm";
+import Whatsapp from "./../Components/Whatsapp/Whatsapp";
 
 export default function RootLayout({
   children,
@@ -17,14 +17,18 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
+        <meta
+          name="google-site-verification"
+          content="RrHWWc_n8gCcFEkE5vpcO_OP-66mmYBPPrcC_Z5Yln8"
+        />
         <link rel="icon" type="image/png" href="./favicon.png" />
       </head>
       <body>
         <NavBar />
         {children}
-        <Footer/>
-        <PopupForm/>
-        <Whatsapp/>
+        <Footer />
+        <PopupForm />
+        <Whatsapp />
       </body>
     </html>
   );
