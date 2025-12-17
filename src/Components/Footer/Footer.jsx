@@ -110,22 +110,22 @@ const Footer = () => {
       <div className="footer-line">
         <span></span>
         <li>
-          <a href="">
+          <a href="https://www.instagram.com/goodwayattestation.india/">
             <FaInstagram className="footer-lineIco" />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://www.facebook.com/goodwayattestation">
             <FaFacebook className="footer-lineIco" />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://twitter.com/Goodway_India">
             <BsTwitterX className="footer-lineIco" />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://www.linkedin.com/company/goodway-attestation/">
             <FaLinkedinIn className="footer-lineIco" />
           </a>
         </li>
