@@ -30,6 +30,7 @@
   font-size: 50px; /* Responsive font size */
   font-weight: bold;
   color: var(--textColor2);
+  text-align: start;
 }
 .contentHead-content > h2 > span {
   color: var(--textColor2);
@@ -56,6 +57,7 @@
 .contentHead-content > h2 {
   font-size: 30px; /* Responsive font size */
   color: var(--textColor2);
+  font-weight: normal;
 }
 .contentHead-content > p {
   font-size: clamp(1rem, 1.2vw, 1.25rem);
@@ -66,10 +68,11 @@
   text-align: start;
   font-size: 25px;
   color: var(--textColor1);
+  margin-top: 30px;
 }
 .contentHead-content > ul {
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 .contentHead-content > ul > li {
   text-align: justify;
@@ -98,36 +101,7 @@
 .readMoreBtn:hover {
   opacity: 0.9;
 }
-.contentHead-listContent {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 20px;
-}
-.contentHead-listContent > h3 {
-  color: var(--customColor2);
-  font-size: 30px;
-  width: 100%;
-  text-align: center;
-}
-.contentHead-listContent > p {
-  color: black;
-  font-size: 18px;
-  text-align: justify;
-}
-.contentHead-listContent > ul > li {
-  text-align: justify;
-  font-weight: 500;
-  list-style: none;
-}
-.contentHead-listContent > ul > li > b {
-  color: var(--customColor1);
-}
-.contentHead-listContent > p > a {
-  color: var(--customColor1);
-  text-decoration: none;
-}
+
 @media screen and (max-width: 768px) {
   .contentHead {
     width: 100%;
@@ -152,12 +126,20 @@
   flex-direction: column;
   width: 100%;
   padding: 20px;
-  overflow-x: scroll;
 }
 .content-table-heading {
   width: 100%;
 }
-
+.content-table-heading > h2 {
+  font-size: 30px;
+  color: var(--textColor2);
+  text-align: start;
+}
+.content-table-heading > h3 {
+  font-size: 25px;
+  color: var(--textColor1);
+  text-align: start;
+}
 .content-table {
   width: fit-content;
   border-collapse: collapse;
@@ -209,5 +191,6 @@
   }
   .content-table-container {
     padding: 10px;
+    overflow-x: scroll;
   }
 }

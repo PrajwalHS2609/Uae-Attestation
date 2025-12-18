@@ -7,8 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .services-content:nth-child(1) {
   flex-direction: column;
@@ -223,7 +223,12 @@
   color: #16a34a;
   margin-top: 8px;
 }
-
+.services-content > h1 {
+  color: var(--textColor2);
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
 @media screen and (max-width: 768px) {
   .services-container {
     /* border: solid red; */
@@ -283,15 +288,14 @@
   align-items: center;
   gap: 14px;
   padding: 18px 22px;
-  background:var(--customBgColor);
+  background: var(--customBgColor);
   border-left: 6px solid var(--customColor1);
   border-radius: 12px;
   /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.usp-card:nth-child(even){
-    border-left: 6px solid var(--customColor2);
-
+.usp-card:nth-child(even) {
+  border-left: 6px solid var(--customColor2);
 }
 
 .usp-card:hover {

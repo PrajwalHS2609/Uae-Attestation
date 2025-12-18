@@ -12,11 +12,13 @@ import HomeRole from "./../Components/HomePage/HomeRole/HomeRole";
 import HomeContent from "./../Components/HomePage/HomeContent";
 import HomeKeywords from "./../Components/HomePage/HomeKeywords/HomeKeywords";
 import HomeFaq from './../Components/HomePage/HomeFaq/HomeFaq';
+import HomeHeaderContent from './../Components/HomePage/HomeHeaderContent';
 
 export default function HomePage() {
   return (
     <div>
       <HeroSection />
+      <HomeHeaderContent/>
       <ServicesHome />
       <HomeAboutUs />
       <HomeStats />
