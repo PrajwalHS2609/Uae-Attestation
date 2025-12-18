@@ -20,21 +20,6 @@
   border-radius: 20px;
   padding: 20px;
 }
-.contentHead-content > h1 {
-  font-size: 50px; /* Responsive font size */
-}
-.contentHead-content > h1 > span {
-  color: var(--customColor2);
-}
-.contentHead-content > h2 {
-  font-size: 50px; /* Responsive font size */
-  font-weight: bold;
-  color: var(--textColor2);
-  text-align: start;
-}
-.contentHead-content > h2 > span {
-  color: var(--textColor2);
-}
 .contentHead > p {
   font-size: clamp(1rem, 1.2vw, 1.25rem);
   text-align: justify;
@@ -52,12 +37,13 @@
 }
 .contentHead-content > h1 {
   color: var(--customColor2);
+  text-align: start;
   font-size: 40px; /* Responsive font size */
 }
 .contentHead-content > h2 {
   font-size: 30px; /* Responsive font size */
   color: var(--textColor2);
-  font-weight: normal;
+  text-align: start;
 }
 .contentHead-content > p {
   font-size: clamp(1rem, 1.2vw, 1.25rem);
@@ -134,11 +120,13 @@
   font-size: 30px;
   color: var(--textColor2);
   text-align: start;
+  font-weight: normal;
 }
 .content-table-heading > h3 {
   font-size: 25px;
   color: var(--textColor1);
   text-align: start;
+  font-weight: normal;
 }
 .content-table {
   width: fit-content;

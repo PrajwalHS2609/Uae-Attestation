@@ -9,7 +9,6 @@ const HomeContent = () => {
       <div className="contentHead-wrapper">
         <div className="contentHead-content">
           <h2>
-            {" "}
             Why UAE Attestation Is Mandatory for Indians (Latest 2025 Update)
           </h2>
           <p>

@@ -1,6 +1,6 @@
 import "./globals.css";
 import NavBar from "./../Components/NavBar/NavBar";
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./../Components/Footer/Footer";
 import PopupForm from "./../Components/PopupForm/PopupForm";
 import Whatsapp from "./../Components/Whatsapp/Whatsapp";
