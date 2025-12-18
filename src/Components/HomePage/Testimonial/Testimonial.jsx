@@ -2,25 +2,29 @@
 import React from "react";
 import "./Testimonial.css";
 import { Carousel } from "react-bootstrap";
+import img1 from "@/Images/TestimonialImgs/Harish Nair.png";
+import img2 from "@/Images/TestimonialImgs/Ananya Joseph.png";
+import img3 from "@/Images/TestimonialImgs/Rohan Mehta.png";
+import Image from "next/image";
 
 const Testimonial = () => {
   const testimonials = [
     {
-      img: "https://randomuser.me/api/portraits/men/32.jpg",
+      img: img1,
       name: "Krishna Sham",
       role: "Marketing Manager",
       feedback:
         "Staffs are very impressive they have done my company related power of attorneys in 5 working days. Status updated properly intime delivery doorstep pick up and drop Moreover they are know the process very much. Highly recommended, Keep it up man",
     },
     {
-      img: "https://randomuser.me/api/portraits/women/44.jpg",
+      img: img2,
       name: "Mamatha Yogesh",
       role: "Entrepreneur",
       feedback:
         "Highly recommended. I was required UAE attestation i got reference my friend so submitted to them. The entire process was explained from Mr Nagesh very well with so much easy. Very promptly I got my certificate with attestation. I appreciate all the support and followups from Goodway Attestation. Thank you",
     },
     {
-      img: "https://randomuser.me/api/portraits/men/32.jpg",
+      img: img3,
       name: "Skanda Shrihari",
       role: "Software Engineer",
       feedback:
@@ -30,7 +34,6 @@ const Testimonial = () => {
 
   return (
     <div className="testimonial-container">
-
       <div className="testimonial-content1">
         <img
           src="https://images.pexels.com/photos/2103130/pexels-photo-2103130.jpeg"
@@ -44,7 +47,7 @@ const Testimonial = () => {
           {testimonials.map((t, i) => (
             <Carousel.Item key={i}>
               <div className="testimonial-card">
-                <img src={t.img} alt={t.name} className="testimonial-avatar" />
+                <Image src={t.img} alt={t.name} className="testimonial-avatar" />
                 <h4>{t.name}</h4>
                 {/* <span>{t.role}</span> */}
                 <p>"{t.feedback}"</p>

@@ -47,10 +47,6 @@ const keywords = [
 const HomeKeywords = () => {
   return (
     <div className="keywords-container" id="">
-      <h2 className="acl-title">
-        {" "}
-        List of <span>Hague Convention Countries</span>
-      </h2>
       <ul className="acl-list">
         {keywords.map((country, index) => (
           <li key={index} className="acl-item">
