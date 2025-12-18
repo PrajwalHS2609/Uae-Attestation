@@ -1,0 +1,213 @@
+/* -----------------------------------ContentReadmore--------------------------- */
+
+.contentHead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  text-align: center;
+}
+.contentHead-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--customBgColor);
+  border-radius: 20px;
+  padding: 20px;
+}
+.contentHead-content > h1 {
+  font-size: 50px; /* Responsive font size */
+}
+.contentHead-content > h1 > span {
+  color: var(--customColor2);
+}
+.contentHead-content > h2 {
+  font-size: 50px; /* Responsive font size */
+  font-weight: bold;
+  color: var(--textColor2);
+}
+.contentHead-content > h2 > span {
+  color: var(--textColor2);
+}
+.contentHead > p {
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  text-align: justify;
+  color: black;
+}
+.contentHead > p > a {
+  text-decoration: none;
+  color: var(--customColor1);
+  font-weight: bold;
+}
+.contentHead-content {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--customBg1);
+}
+.contentHead-content > h1 {
+  color: var(--customColor2);
+  font-size: 40px; /* Responsive font size */
+}
+.contentHead-content > h2 {
+  font-size: 30px; /* Responsive font size */
+  color: var(--textColor2);
+}
+.contentHead-content > p {
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  text-align: justify;
+  color: black;
+}
+.contentHead-content > h3 {
+  text-align: start;
+  font-size: 25px;
+  color: var(--textColor1);
+}
+.contentHead-content > ul {
+  margin: 0;
+  padding: 0;
+}
+.contentHead-content > ul > li {
+  text-align: justify;
+  font-weight: 500;
+  list-style: none;
+}
+.contentHead-content > ul > li > a {
+  color: var(--customColor1);
+}
+.contentHead-content > p > a {
+  text-decoration: none;
+  color: var(--customColor1);
+}
+.readMoreBtn {
+  background: var(--customColor1);
+  border: none;
+  padding: 8px 16px;
+  margin-top: 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.readMoreBtn:hover {
+  opacity: 0.9;
+}
+.contentHead-listContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+}
+.contentHead-listContent > h3 {
+  color: var(--customColor2);
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+.contentHead-listContent > p {
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+}
+.contentHead-listContent > ul > li {
+  text-align: justify;
+  font-weight: 500;
+  list-style: none;
+}
+.contentHead-listContent > ul > li > b {
+  color: var(--customColor1);
+}
+.contentHead-listContent > p > a {
+  color: var(--customColor1);
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .contentHead {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .contentHead-content > h1 {
+    font-size: 30px; /* Responsive font size */
+  }
+  .contentHead-content > h2 {
+    font-size: 25px; /* Responsive font size */
+  }
+  .contentHead-content > h3 {
+    font-size: 20px; /* Responsive font size */
+    margin-top: 20px;
+  }
+}
+.content-table-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  overflow-x: scroll;
+}
+.content-table-heading {
+  width: 100%;
+}
+
+.content-table {
+  width: fit-content;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.content-table th,
+.content-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-left: 1px solid #e5e7eb;
+}
+
+.content-table thead {
+  background: white;
+  color: var(--textColor1);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.content-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.content-table tbody tr:hover {
+  background-color: #f1f5ff;
+}
+
+.content-table td {
+  color: #374151;
+  font-weight: 500;
+}
+.content-table-container > p {
+  padding: 20px;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .content-table-heading > h2 {
+    font-size: 25px; /* Responsive font size */
+  }
+  .content-table-heading > h3 {
+    font-size: 20px;
+  }
+  .content-table-container {
+    padding: 10px;
+  }
+}

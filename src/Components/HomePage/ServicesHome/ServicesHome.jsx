@@ -60,33 +60,69 @@ const ServicesHome = () => {
   return (
     <div className="services-container" id="services">
       <div className="services-content">
-        <h2>UAE Embassy Attestation Services in Bangalore</h2>
-        <p>
-          Embark on a smooth and reliable journey through the attestation
-          process for your documents destined for the UAE with Goodway
-          Attestation – your trusted partner for UAE Embassy Attestation
-          Services in Bangalore. We specialize in providing seamless and
-          efficient attestation services, ensuring that your documents meet all
-          the stringent requirements set by the UAE Embassy.
-        </p>
-        <p>
-          Navigating the intricacies of document attestation can be a complex
-          task, but with Goodway Attestation, we simplify the entire process for
-          you. Whether you require attestation for educational, personal, or
-          commercial documents, our dedicated team is well-equipped to handle
-          your specific needs with precision and expertise.
-        </p>
-        <p>
+        <h2>
           {" "}
-          At Goodway Attestation, we prioritize accuracy, reliability, and
-          promptness, making us the preferred choice for UAE Embassy Attestation
-          Services in Bangalore. Trust us to manage your document attestation
-          efficiently, allowing you to pursue your plans and opportunities in
-          the UAE with confidence. Your documents are safe in our hands, and our
-          commitment is to deliver exceptional attestation services tailored to
-          your requirements.
+          UAE Attestation in Bangalore – Government Approved & Guaranteed
+          Delivery
+        </h2>
+        <p>
+          If you are planning to work, study, start a business, or move your
+          family to the UAE, completing{" "}
+          <a href="https://uaeattestationbangalore.com/">
+            UAE Attestation in Bangalore
+          </a>{" "}
+          is a mandatory legal requirement. Goodway Attestation is a
+          government-approved attestation agency with 16 years of process
+          expertise, offering fast, secure, and guaranteed UAE attestation
+          services trusted by 12,000+ happy customers and 28+ top Indian MNC
+          partners in Bangalore.
+        </p>
+        <p>
+          We provide end-to-end{" "}
+          <a href="https://uaeattestationbangalore.com">
+            UAE Attestation in Bangalore
+          </a>{" "}
+          for Educational, Personal, and Commercial Certificates, strictly
+          following Ministry of External Affairs (MEA – India) and UAE Embassy /
+          MOFA guidelines.
         </p>
         <p></p>
+      </div>
+      <div className="highlight-section">
+        {/* Duration Highlight */}
+        <div className="highlight-card">
+          <h3>🚀 Duration – UAE Attestation in Just 5 Days</h3>
+          <ul>
+            <li>
+              <strong>Standard Processing Time:</strong> 5 Working Days
+            </li>
+            <li className="note">
+              (Duration may vary depending on document type & issuing authority)
+            </li>
+          </ul>
+          <p>
+            Our strong coordination with government departments and 16+ years of
+            experience ensure faster turnaround with{" "}
+            <strong>guaranteed delivery</strong>.
+          </p>
+        </div>
+
+        {/* Pickup Highlight */}
+        <div className="highlight-card">
+          <h3>⚡ 1-Hour Document Collection across Bangalore</h3>
+          <p>
+            We offer express document pickup within <strong>1 hour</strong> from
+            60+ localities, including:
+          </p>
+          <p className="locations">
+            Whitefield, Electronic City, Marathahalli, Bellandur, Indiranagar,
+            Jayanagar, Yelahanka, Rajajinagar, Hebbal, Malleshwaram, BTM, HSR,
+            Banashankari & more.
+          </p>
+          <p className="highlight-text">
+            No travel. No waiting. Complete convenience.
+          </p>
+        </div>
       </div>
       <div className="services-content">
         {cards.map((x, index) => (
@@ -115,6 +151,32 @@ const ServicesHome = () => {
           </div>
         ))}
       </div>
+      <div className="usp-section">
+  <h2 className="usp-heading">
+    Our USPs – Why Goodway Attestation Is #1 in Bangalore
+  </h2>
+
+  <div className="usp-column">
+    {[
+      "16 Years of Process Expertise",
+      "Government Approved Attestation Agency",
+      "Authorized by MEA & UAE Authorities",
+      "Trusted by 12,000+ Happy Customers",
+      "Exclusive Partner of 28+ Top Indian MNCs in Bangalore",
+      "Secure Document Handling & Confidentiality",
+      "Live Progress Tracking & Regular Updates",
+      "Guaranteed Delivery Commitment",
+      "1-Hour Document Collection from 60+ Bangalore Localities",
+      "Dedicated Relationship Manager for Every Case",
+    ].map((item, index) => (
+      <div key={index} className="usp-card">
+        <span className="usp-icon">✔</span>
+        <p>{item}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 };
