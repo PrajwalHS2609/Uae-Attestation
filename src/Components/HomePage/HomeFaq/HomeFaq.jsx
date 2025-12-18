@@ -2,7 +2,7 @@
 import React from "react";
 import "./HomeFaq.css";
 import Accordion from "react-bootstrap/Accordion";
-import faq from "@/Images/faq.jpg";
+import faq from "@/Images/faq.png";
 import Image from "next/image";
 const HomeFaq = () => {
   return (
