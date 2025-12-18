@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeHeaderContent = () => {
   return (
-    <div  >
+    <div>
       <div className="services-content">
         <h1>
           {" "}
@@ -56,9 +56,7 @@ const HomeHeaderContent = () => {
           <h3>⚡ 1-Hour Document Collection across Bangalore</h3>
           <p>
             We offer express document pickup within <strong>1 hour</strong> from
-            60+ localities, including:
-          </p>
-          <p className="locations">
+            60+ localities, including: <br />
             Whitefield, Electronic City, Marathahalli, Bellandur, Indiranagar,
             Jayanagar, Yelahanka, Rajajinagar, Hebbal, Malleshwaram, BTM, HSR,
             Banashankari & more.
