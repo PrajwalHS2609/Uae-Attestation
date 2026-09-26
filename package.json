@@ -9,8 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@portabletext/react": "^8.0.1",
+    "@sanity/client": "^8.7.0",
+    "@sanity/image-url": "^2.1.1",
     "bootstrap": "^5.3.8",
     "next": "^16.0.10",
+    "next-sanity": "^13.3.4",
     "react": "^19.2.3",
     "react-bootstrap": "^2.10.10",
     "react-countup": "^6.5.3",
@@ -26,6 +30,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "baseline-browser-mapping": "^2.11.25",
     "eslint": "^9",
     "eslint-config-next": "15.5.0",
     "tailwindcss": "^4",

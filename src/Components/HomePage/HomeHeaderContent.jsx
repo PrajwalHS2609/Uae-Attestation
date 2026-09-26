@@ -1,35 +1,12 @@
 import React from "react";
 
-const HomeHeaderContent = () => {
+const HomeHeaderContent = ({ data }) => {
   return (
     <div>
       <div className="services-content">
-        <h1>
-          {" "}
-          UAE Attestation in Bangalore – Government Approved & Guaranteed
-          Delivery
-        </h1>
-        <p>
-          If you are planning to work, study, start a business, or move your
-          family to the UAE, completing{" "}
-          <a href="https://uaeattestationbangalore.com/">
-            UAE Attestation in Bangalore
-          </a>{" "}
-          is a mandatory legal requirement. Goodway Attestation is a
-          government-approved attestation agency with 16 years of process
-          expertise, offering fast, secure, and guaranteed UAE attestation
-          services trusted by 12,000+ happy customers and 28+ top Indian MNC
-          partners in Bangalore.
-        </p>
-        <p>
-          We provide end-to-end{" "}
-          <a href="https://uaeattestationbangalore.com">
-            UAE Attestation in Bangalore
-          </a>{" "}
-          for Educational, Personal, and Commercial Certificates, strictly
-          following Ministry of External Affairs (MEA – India) and UAE Embassy /
-          MOFA guidelines.
-        </p>
+        <h1>{data?.heading}</h1>
+        <p>{data?.paragraph1}</p>
+        <p>{data?.paragraph2}</p>
         <p></p>
       </div>
       <div className="highlight-section">
@@ -46,7 +23,7 @@ const HomeHeaderContent = () => {
           </ul>
           <p>
             Our strong coordination with government departments and 16+ years of
-            experience ensure faster turnaround with{" "}
+            experience ensure faster turnaround with
             <strong>guaranteed delivery</strong>.
           </p>
         </div>

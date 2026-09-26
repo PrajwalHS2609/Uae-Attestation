@@ -96,12 +96,12 @@ const Menu = () => {
                 mobileServicesOpen ? "open" : ""
               }`}
             >
-              <li><Link href="/">Educational Certificates</Link></li>
-              <li><Link href="/">Marriage Certificates</Link></li>
-              <li><Link href="/">Birth Certificates</Link></li>
-              <li><Link href="/">HRD Attestation</Link></li>
-              <li><Link href="/">Commercial Documents</Link></li>
-              <li><Link href="/">Legal Documents</Link></li>
+              <li><Link href="#services">Educational Certificates</Link></li>
+              <li><Link href="#services">Marriage Certificates</Link></li>
+              <li><Link href="#services">Birth Certificates</Link></li>
+              <li><Link href="#services">HRD Attestation</Link></li>
+              <li><Link href="#services">Commercial Documents</Link></li>
+              <li><Link href="#services">Legal Documents</Link></li>
             </ul>
           </li>
 
