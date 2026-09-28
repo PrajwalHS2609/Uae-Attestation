@@ -14,9 +14,9 @@
   flex-direction: column;
 }
 .services-content:nth-child(1) > p {
-  width: 80%;
+  width: 90%;
   color: var(--textColor1);
-  text-align: center;
+  text-align: justify;
   font-size: 18px;
 }
 

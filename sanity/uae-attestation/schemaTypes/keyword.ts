@@ -1,34 +1,32 @@
 import { defineField, defineType } from "sanity";
 
 export default defineType({
-  name: "homeHeaderContent",
-  title: "Home Header Content",
+  name: "homeKeywords",
+  title: "Home Keywords",
   type: "document",
 
   fields: [
     defineField({
-      name: "heading",
-      title: "Heading",
-      type: "string",
-    }),
-
-    defineField({
-      name: "paragraph1",
-      title: "Paragraph 1",
-      type: "text",
-    }),
-
-    defineField({
-      name: "paragraph2",
-      title: "Paragraph 2",
-      type: "text",
+      name: "keywords",
+      title: "Keywords",
+      type: "array",
+      of: [
+        {
+          type: "string",
+        },
+      ],
     }),
   ],
 
   preview: {
     select: {
-      title: "heading",
+      title: "keywords",
+    },
+    prepare({ title }) {
+      return {
+        title: "Home Keywords",
+        subtitle: title ? `${title.length} keywords` : "No keywords",
+      };
     },
   },
 });
-

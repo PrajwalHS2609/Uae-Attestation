@@ -49,8 +49,7 @@ const faqQuery = `*[_type == "homeFaq"][0]{
 }`;
 const homeHeaderQuery = `*[_type == "homeHeaderContent"][0]{
   heading,
-  paragraph1,
-  paragraph2
+  paragraphs
 }`;
 export default async function HomePage() {
   const heroData = await client.fetch(heroQuery);

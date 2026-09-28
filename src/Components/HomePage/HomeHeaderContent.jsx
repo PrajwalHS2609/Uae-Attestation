@@ -5,9 +5,10 @@ const HomeHeaderContent = ({ data }) => {
     <div>
       <div className="services-content">
         <h1>{data?.heading}</h1>
-        <p>{data?.paragraph1}</p>
-        <p>{data?.paragraph2}</p>
-        <p></p>
+
+        {data?.paragraphs?.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
       </div>
       <div className="highlight-section">
         {/* Duration Highlight */}
