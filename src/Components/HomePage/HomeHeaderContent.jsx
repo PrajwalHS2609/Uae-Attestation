@@ -13,7 +13,7 @@ const HomeHeaderContent = ({ data }) => {
       <div className="highlight-section">
         {/* Duration Highlight */}
         <div className="highlight-card">
-          <h3>🚀 Duration – UAE Attestation in Just 5 Days</h3>
+          <h3>🚀 Duration - UAE Attestation in Just 5 Days</h3>
           <ul>
             <li>
               <strong>Standard Processing Time:</strong> 5 Working Days
