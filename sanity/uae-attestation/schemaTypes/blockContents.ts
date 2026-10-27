@@ -84,9 +84,9 @@ export default defineType({
       type: 'accordionBlock',
     }),
     defineArrayMember({
-      type: 'faq',
+      type: 'homeFaq',
     }),
-    defineArrayMember({type: 'quoteBlock'}),
+    // defineArrayMember({type: 'quoteBlock'}),
     defineArrayMember({type: 'highlightBlock'}),
     defineArrayMember({type: 'carouselBlock'}),
   ],

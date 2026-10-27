@@ -4,7 +4,7 @@ import React from "react";
 import "./HeroSection.css";
 import uaelogo from "./../../../Images/UAE Embassy.png";
 import Image from "next/image";
-
+import heroImg from "@/Images/heroSectionImg.png"
 import key1 from "@/Images/KeyPts/24X7.png";
 import key2 from "@/Images/KeyPts/ISO.png";
 import key3 from "@/Images/KeyPts/expertise.png";
@@ -19,8 +19,8 @@ const HeroSection = ({ data }) => {
 
   return (
     <div className="heroSection-container">
-      <img
-        src="https://images.pexels.com/photos/325193/pexels-photo-325193.jpeg"
+      <Image
+        src={heroImg}
         alt="Background"
       />
 
