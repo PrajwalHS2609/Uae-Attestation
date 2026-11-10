@@ -3,11 +3,11 @@
 import "./SanityContent.css"
 import { PortableText } from "@portabletext/react";
 import type { PortableTextBlock } from "@portabletext/types";
-import { portableTextComponents } from "../../../../PortableTextComponents";
 import HomeAboutUs from "../HomeAboutUs/HomeAboutUs";
 import HomeStats from "../HomeStats/HomeStats";
 import WhyChoose from "../WhyChoose/WhyChoose";
 import ContentHeader from './../../ContentHeader/ContentHeader';
+import { homePortableTextComponents } from '@/Components/portableTextComponents';
 
 export type CustomTable = {
   title?: string;
@@ -23,8 +23,8 @@ export type ServiceContentType = {
   slug: string | { current: string };
   language: string;
 
-  body1?: PortableTextBlock[];
-  body2?: PortableTextBlock[];
+  body1?: homePortableTextComponents[];
+  body2?: homePortableTextComponents[];
 
   mainImage?: {
     asset?: {
@@ -107,7 +107,7 @@ export default function ServiceContent({
           <div className="slugContent-container">
             <PortableText
               value={content.body1}
-              components={portableTextComponents}
+              components={homePortableTextComponents}
             />
           </div>
         </div>
@@ -141,7 +141,7 @@ export default function ServiceContent({
           <div className="slugContent-container">
             <PortableText
               value={content.body2}
-              components={portableTextComponents}
+              components={homePortableTextComponents}
             />
           </div>
         </div>
