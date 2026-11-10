@@ -6,7 +6,7 @@ import {
   type PortableTextBlock,
   type PortableTextComponents,
 } from "@portabletext/react";
-
+import "@/Components/HomePage/HomeKeywords/HomeKeywords.css"
 import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url";
 import Carousel from "react-bootstrap/Carousel";

@@ -2,12 +2,12 @@
 "use client";
 import "./SanityContent.css"
 import { PortableText } from "@portabletext/react";
-import type { PortableTextBlock } from "@portabletext/types";
 import HomeAboutUs from "../HomeAboutUs/HomeAboutUs";
 import HomeStats from "../HomeStats/HomeStats";
 import WhyChoose from "../WhyChoose/WhyChoose";
 import ContentHeader from './../../ContentHeader/ContentHeader';
 import { homePortableTextComponents } from '@/Components/portableTextComponents';
+import type { PortableTextBlock } from "@portabletext/types";
 
 export type CustomTable = {
   title?: string;
@@ -23,8 +23,8 @@ export type ServiceContentType = {
   slug: string | { current: string };
   language: string;
 
-  body1?: homePortableTextComponents[];
-  body2?: homePortableTextComponents[];
+  body1?: PortableTextBlock[];
+  body2?: PortableTextBlock[];
 
   mainImage?: {
     asset?: {
